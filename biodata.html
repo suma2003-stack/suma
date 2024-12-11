@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" color:white >Home</a></li>
+                <li><a href="resume.html" color:white >Resume</a></li>
+                <li><a href="biodata.html" color:white  class="active">Biodata</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Biodata</h1>
+        <form id="biodata-form" align:"center" >
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+            
+            <label for="gender">Gender:</label>
+            <input type="text" id="gender" name="gender" required><br><br>
+
+            <label for="nationality">Nationality:</label>
+            <input type="text" id="nationality" name="nationality" required><br><br>
+
+            <label for="hobbies">Hobbies:</label>
+            <input type="text" id="hobbies" name="hobbies" required><br><br>
+            
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required><br><br>
+
+            <button type="submit" align:"center">Submit</button>
+        </form>
+        <hr>
+        <div id="biodata-display">
+            <h2>Entered Biodata:</h2>
+            <p><strong>Name:</strong> <span id="display-name"></span></p>
+            <p><strong>Date of Birth:</strong> <span id="display-dob"></span></p>
+            <p><strong>Gender:</strong> <span id="display-gender"></span></p>
+            <p><strong>Nationality:</strong> <span id="display-nationality"></span></p>
+            <p><strong>Hobbies:</strong> <span id="display-hobbies"></span></p>
+            <p><strong>Country:</strong> <span id="display-country"></span></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 SUMA U</p>
+    </footer>
+</body>
+</html>
